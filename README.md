@@ -18,11 +18,11 @@ To run this project, you will need to have the following installed on your machi
 Node.js
 MongoDB
 # Installation
-1. Clone the repository
+1. Clone the repository  
 git clone https://github.com/albapozhegu/e-learning.git
-3. Install dependencies
-cd e-learning
-npm install
+3. Install dependencies  
+cd e-learning  
+npm install  
 3. Edit the .env file and set the following variables:
 MONGO_URI=<your_mongodb_uri>
 4. Start the server
