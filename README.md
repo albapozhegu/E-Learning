@@ -20,15 +20,15 @@ MongoDB
 # Installation
 1. Clone the repository
 git clone https://github.com/albapozhegu/e-learning.git
-# 2. Install dependencies
+2. Install dependencies
 cd e-learning
 npm install
-# 3. Edit the .env file and set the following variables:
+3. Edit the .env file and set the following variables:
 MONGO_URI=<your_mongodb_uri>
-# 4. Start the server
+4. Start the server
 npm run dev
 The server should now be running on http://localhost:5000.
-# 5. Start the client
+5. Start the client
 cd client
 npm install
 npm run dev
