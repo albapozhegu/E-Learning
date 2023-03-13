@@ -20,7 +20,7 @@ MongoDB
 # Installation
 1. Clone the repository
 git clone https://github.com/albapozhegu/e-learning.git
-2. Install dependencies
+3. Install dependencies
 cd e-learning
 npm install
 3. Edit the .env file and set the following variables:
