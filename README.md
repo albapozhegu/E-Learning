@@ -28,7 +28,7 @@ MONGO_URI=<your_mongodb_uri>
 4. Start the server
 npm run dev  
 The server should now be running on http://localhost:5000.
-5. Start the client
+5. Start the client  
 cd client  
 npm install  
 npm run dev
