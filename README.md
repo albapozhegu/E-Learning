@@ -23,14 +23,14 @@ git clone https://github.com/albapozhegu/e-learning.git
 3. Install dependencies  
 cd e-learning  
 npm install  
-3. Edit the .env file and set the following variables:
+3. Edit the .env file and set the following variables:  
 MONGO_URI=<your_mongodb_uri>
 4. Start the server
-npm run dev
+npm run dev  
 The server should now be running on http://localhost:5000.
 5. Start the client
-cd client
-npm install
+cd client  
+npm install  
 npm run dev
 
 # Usage
@@ -47,10 +47,10 @@ Tracking Progress
 You can track your progress by clicking on the "Progress" link in the navigation bar. This will take you to the progress page, where you can see your progress for all the courses you are enrolled in.
 
 # Built With
-MongoDB - NoSQL database
-Express.js - Node.js web framework
-Vue.js - Front-end JavaScript framework
-Node.js - JavaScript runtime
+MongoDB - NoSQL database  
+Express.js - Node.js web framework  
+Vue.js - Front-end JavaScript framework  
+Node.js - JavaScript runtime  
 Bootstrap - Front-end CSS framework
 
 # Contributing
