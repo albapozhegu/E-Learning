@@ -19,16 +19,15 @@ Node.js
 MongoDB
 # Installation
 1. Clone the repository  
-git clone https://github.com/albapozhegu/e-learning.git
-3. Install dependencies  
-cd e-learning  
-npm install  
-3. Edit the .env file and set the following variables:  
+git clone https://github.com/albapozhegu/e-learning.git 
+2. Edit the .env file and set the following variables:  
 MONGO_URI=<your_mongodb_uri>
-4. Start the server
+3. Start the server
+cd backend  
+npm install  
 npm run dev  
 The server should now be running on http://localhost:5000.
-5. Start the client  
+4. Start the client  
 cd client  
 npm install  
 npm run dev
