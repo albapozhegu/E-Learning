@@ -32,3 +32,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.root {
+  margin: 3.2rem 0;
+}
+</style>
