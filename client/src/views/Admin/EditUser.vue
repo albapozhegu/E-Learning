@@ -26,7 +26,7 @@
           <div>
             <input
               type="text"
-              placeholder="Enter name"
+              placeholder="Your name"
               v-model="userDetail.name"
               @blur="validate('name')"
               @keypress="validate('name')"
@@ -252,6 +252,7 @@ export default {
       }
     },
   },
+  
   components: {
     Button,
     SpinnerVue,
