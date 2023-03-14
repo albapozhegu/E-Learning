@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-    
+     
 }
 <script>
 import WordContributionData from "components/WordAdmin/AddWord/data";
