@@ -48,6 +48,6 @@ exports.deleteFAQ=async(req,res)=>{
         console.error("DELETE ERROR: ", error);
         return res
             .status(503)
-            .json({ message: "Eror, could not delete" });
+            .json({ message: "Error, could not delete" });
     }
 }
