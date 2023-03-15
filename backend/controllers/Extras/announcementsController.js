@@ -43,12 +43,12 @@ exports.deleteAnnouncement = async (req, res) => {
         const id = req.params.id;
         const isDelete = await AnnouncementModel.findByIdAndDelete({ _id: req.params.id });
         if (isDelete) {
-            return res.status(200).json({ message: "Delete successfully." });
+            return res.status(200).json({ message: "Deleted successfully." });
         }
     } catch (error) {
         console.error("DELETE ERROR: ", error);
         return res
             .status(503)
-            .json({ message: "Eror, can not delete this question" });
+            .json({ message: "Error, can not delete this question" });
     }
 }
