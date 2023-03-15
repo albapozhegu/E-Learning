@@ -59,6 +59,6 @@ exports.deleteEvent = async(req, res) => {
         console.error("DELETE ERROR: ", error);
         return res
             .status(503)
-            .json({ message: "Eror, can not delete this question" });
+            .json({ message: "Error, can not delete this question" });
     }
 }
