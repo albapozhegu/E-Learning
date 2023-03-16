@@ -269,9 +269,7 @@ exports.lockUser = async (req, res) => {
     const user = jwt.verify(token, process.env.REFRESH_TOKEN_SECRET);
     const id = req.params.user_id;
     if (user.id === id) {
-      return res
-        .status(400)
-        .json({ message: `Can't lock account that logged in the system` });
+      return res.status(400).json({ message: `Can't lock account that logged in the system` });
     }
     await Users.findOneAndUpdate(
       { _id: id },
