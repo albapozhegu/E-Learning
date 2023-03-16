@@ -28,7 +28,7 @@ exports.postContributeWord = async (req, res, next) => {
       const isExist = await isExistWord(word, type);
       if(isExist)
       {
-        return res.status(400).json({ message: `Từ ${word} (${type}) đã tồn tại trong từ điển !` });
+        return res.status(400).json({ message: `The ${word} (${type}) already exists in the dictionary!` });
       }
      // upload description picture if available
      let pictureUrl = null;
