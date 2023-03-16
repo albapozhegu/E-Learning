@@ -84,7 +84,7 @@ exports.putGrammar = async (req, res) => {
     const GrammarExist = await getGrammarById(grammarId);
 
     if(!GrammarExist) {
-      return res.status(400).json({ message: 'Error, Not found grammar.' });
+      return res.status(400).json({ message: 'Error, grammar not found.' });
     }
 
     // edit grammar
