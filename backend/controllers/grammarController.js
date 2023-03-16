@@ -145,7 +145,8 @@ exports.putGrammar = async (req, res) => {
     if (grammar != null) {
       return res.status(200).json(grammar);
     }
-    return res.status(503).json({ message: 'Error, can not update grammar.' });return res.status(503).json({ message: 'Error, can not update question.' });
+    return res.status(503).json({ message: 'Error, can not update grammar.' });
+    return res.status(503).json({ message: 'Error, can not update question.' });
   } catch (error) {
     console.error('PUT ERROR: ', error);
     return res.status(503).json({ message: 'Error, can not update grammar.' });
@@ -176,7 +177,7 @@ exports.getLevels = async (req, res) => {
     return res.status(200).json({levels });
   } catch (error) {
     console.error('ERROR: ', error);
-    return res.status(503).json({ message: 'Lỗi dịch vụ, thử lại sau' });
+    return res.status(503).json({ message: 'Service error, try again later' });
   }
 };
 
@@ -204,10 +205,10 @@ exports.deleteById = async (req, res) => {
     if (isDelete) {
       return res.status(200).json({ message: 'Delete successfully.' });
     }
-    return res.status(400).json({ message: 'Eror, can not delete this grammar' });
+    return res.status(400).json({ message: 'Error, can not delete this grammar' });
   } catch (error) {
     console.error('ERROR: ', error);
-    return res.status(503).json({ message: 'Eror, can not delete this grammar' });
+    return res.status(503).json({ message: 'Error, can not delete this grammar' });
   }
 };
 
@@ -218,7 +219,7 @@ exports.getAllGrammars = async (req, res) => {
     return res.status(200).json({grammars });
   } catch (error) {
     console.error('ERROR: ', error);
-    return res.status(503).json({ message: 'Lỗi dịch vụ, thử lại sau' });
+    return res.status(503).json({ message: 'Service error, try again later' });
   }
 };
 
@@ -256,6 +257,3 @@ exports.getGrammar = async (req, res) => {
       return res.status(503).json({ message: 'ERROR.' });
     }
   };
-
-
-
