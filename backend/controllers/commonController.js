@@ -16,7 +16,6 @@ exports.getTotalWordPackTopic = async (req, res, next) => {
     const total = (await countWordPackTopic(JSON.parse(packInfo))) || 0;
     return res.status(200).json({ total });
   } catch (error) {
-    return res.status(503).json({ message: 'Lỗi dịch vụ, thử lại sau' });
+    return res.status(503).json({ message: 'Service error, try again later' });
   }
 };
-
