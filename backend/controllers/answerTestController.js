@@ -38,7 +38,7 @@ try {
   //check if question existed
   const question = await getQuestionTestById(QuestionId);
   if (!question) {
-    return res.status(400).json({ message: "Error, Not found listen." });
+    return res.status(400).json({ message: "Error, listen not found." });
   }
 
   // create 
