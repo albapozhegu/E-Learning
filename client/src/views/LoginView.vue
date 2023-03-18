@@ -176,7 +176,7 @@ export default {
  
   font-size: 1rem;
 }
-
+ 
 .input-container input:focus {
   border: 0;
   outline: 0;
